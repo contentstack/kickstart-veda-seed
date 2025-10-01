@@ -1,0 +1,11 @@
+{
+  "stack_variables": {},
+  "discrete_variables": { "cms": true, "_version": 3 },
+  "live_preview": {
+    "enabled": true,
+    "default-env": "bltc8ed543c7bd5d900",
+    "default-url": "",
+    "is-always-open-in-new-tab": false,
+    "lp-onboarding-setup-visible": true
+  }
+}
