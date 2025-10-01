@@ -1,0 +1,12 @@
+{
+  "name": "kickstart-veda-seed",
+  "version": "1.1.0",
+  "description": "This repository provides the Kickstart stack content for the Veda Kickstart project. An easy way to import this stack content is by using the CLI seed command.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/contentstack/kickstart-veda-seed"
+  },
+  "author": "Tim Benniks <tim.benniks@contentstack.com>",
+  "homepage": "https://contentstack.com",
+  "license": "MIT"
+}
