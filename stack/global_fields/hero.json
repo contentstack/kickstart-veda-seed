@@ -1,0 +1,234 @@
+{
+  "title": "Hero",
+  "uid": "hero",
+  "description": "Page Hero",
+  "schema": [
+    {
+      "data_type": "text",
+      "display_name": "Title",
+      "uid": "title",
+      "field_metadata": {
+        "description": "",
+        "default_value": "Enter Title",
+        "multiline": true
+      },
+      "format": "",
+      "error_messages": {
+        "format": ""
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "Title Tag",
+      "display_type": "dropdown",
+      "enum": {
+        "advanced": false,
+        "choices": [
+          {
+            "value": "h1"
+          },
+          {
+            "value": "h2"
+          },
+          {
+            "value": "h3"
+          },
+          {
+            "value": "h4"
+          }
+        ]
+      },
+      "multiple": false,
+      "uid": "title_tag",
+      "field_metadata": {
+        "description": "",
+        "default_value": "h1"
+      },
+      "mandatory": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "Description",
+      "uid": "description",
+      "field_metadata": {
+        "description": "",
+        "default_value": "Enter Description",
+        "multiline": true
+      },
+      "format": "",
+      "error_messages": {
+        "format": ""
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "blocks",
+      "display_name": "Ctas",
+      "blocks": [
+        {
+          "title": "Cta",
+          "uid": "cta",
+          "schema": [
+            {
+              "data_type": "text",
+              "display_name": "Text",
+              "uid": "text",
+              "field_metadata": {
+                "description": "",
+                "default_value": "Link Text"
+              },
+              "format": "",
+              "error_messages": {
+                "format": ""
+              },
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false
+            },
+            {
+              "data_type": "link",
+              "display_name": "Link",
+              "uid": "link",
+              "field_metadata": {
+                "description": "",
+                "default_value": {
+                  "title": "",
+                  "url": ""
+                }
+              },
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false
+            }
+          ]
+        }
+      ],
+      "multiple": true,
+      "uid": "ctas",
+      "field_metadata": {
+        "instruction": "",
+        "description": ""
+      },
+      "mandatory": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "file",
+      "display_name": "Image",
+      "uid": "image",
+      "extensions": [],
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard"
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "file",
+      "display_name": "Video",
+      "uid": "video",
+      "extensions": [],
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard"
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "group",
+      "display_name": "Design",
+      "field_metadata": {
+        "description": "",
+        "instruction": ""
+      },
+      "schema": [
+        {
+          "data_type": "text",
+          "display_name": "Copy Location",
+          "display_type": "dropdown",
+          "enum": {
+            "advanced": false,
+            "choices": [
+              {
+                "value": "left"
+              },
+              {
+                "value": "right"
+              }
+            ]
+          },
+          "multiple": false,
+          "uid": "copy_location",
+          "field_metadata": {
+            "description": "",
+            "default_value": "left"
+          },
+          "mandatory": true,
+          "non_localizable": false,
+          "unique": false
+        },
+        {
+          "data_type": "number",
+          "display_name": "Overlay Opacity",
+          "uid": "overlay_opacity",
+          "field_metadata": {
+            "description": "",
+            "default_value": 0
+          },
+          "mandatory": true,
+          "multiple": false,
+          "non_localizable": false,
+          "unique": false
+        },
+        {
+          "data_type": "text",
+          "display_name": "Theme",
+          "display_type": "dropdown",
+          "enum": {
+            "advanced": false,
+            "choices": [
+              {
+                "value": "dark"
+              },
+              {
+                "value": "light"
+              }
+            ]
+          },
+          "multiple": false,
+          "uid": "theme",
+          "field_metadata": {
+            "description": "",
+            "default_value": "dark"
+          },
+          "mandatory": true,
+          "non_localizable": false,
+          "unique": false
+        }
+      ],
+      "uid": "design",
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    }
+  ]
+}
