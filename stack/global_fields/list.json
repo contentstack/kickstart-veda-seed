@@ -1,0 +1,191 @@
+{
+  "title": "List",
+  "uid": "list",
+  "description": "A list of items. Products, categories, or product lines.",
+  "schema": [
+    {
+      "data_type": "text",
+      "display_name": "Title",
+      "uid": "title",
+      "field_metadata": {
+        "description": "",
+        "default_value": "Add Title"
+      },
+      "format": "",
+      "error_messages": {
+        "format": ""
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "Title Tag",
+      "display_type": "dropdown",
+      "enum": {
+        "advanced": false,
+        "choices": [
+          {
+            "value": "h1"
+          },
+          {
+            "value": "h2"
+          },
+          {
+            "value": "h3"
+          },
+          {
+            "value": "h4"
+          }
+        ]
+      },
+      "multiple": false,
+      "uid": "title_tag",
+      "field_metadata": {
+        "description": "",
+        "default_value": "h3"
+      },
+      "mandatory": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "text",
+      "display_name": "Description",
+      "uid": "description",
+      "field_metadata": {
+        "description": "",
+        "default_value": "",
+        "multiline": true
+      },
+      "format": "",
+      "error_messages": {
+        "format": ""
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "boolean",
+      "display_name": "Load First Image Eager",
+      "uid": "load_first_image_eager",
+      "field_metadata": {
+        "description": "",
+        "default_value": false
+      },
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "reference",
+      "display_name": "Reference",
+      "reference_to": [
+        "product_line",
+        "product",
+        "category"
+      ],
+      "field_metadata": {
+        "ref_multiple": true,
+        "ref_multiple_content_types": true
+      },
+      "uid": "reference",
+      "mandatory": false,
+      "multiple": false,
+      "non_localizable": false,
+      "unique": false
+    },
+    {
+      "data_type": "blocks",
+      "display_name": "Cards",
+      "blocks": [
+        {
+          "title": "Card",
+          "uid": "card",
+          "reference_to": "card",
+          "schema": [
+            {
+              "data_type": "text",
+              "display_name": "Title",
+              "uid": "title",
+              "field_metadata": {
+                "description": "",
+                "default_value": ""
+              },
+              "format": "",
+              "error_messages": {
+                "format": ""
+              },
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false
+            },
+            {
+              "data_type": "text",
+              "display_name": "Description",
+              "uid": "description",
+              "field_metadata": {
+                "description": "",
+                "default_value": "",
+                "multiline": true
+              },
+              "format": "",
+              "error_messages": {
+                "format": ""
+              },
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false
+            },
+            {
+              "data_type": "file",
+              "display_name": "Image",
+              "uid": "image",
+              "extensions": [],
+              "field_metadata": {
+                "description": "",
+                "rich_text_type": "standard"
+              },
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false
+            },
+            {
+              "data_type": "link",
+              "display_name": "Link",
+              "uid": "link",
+              "field_metadata": {
+                "description": "",
+                "default_value": {
+                  "title": "",
+                  "url": ""
+                }
+              },
+              "mandatory": false,
+              "multiple": false,
+              "non_localizable": false,
+              "unique": false
+            }
+          ]
+        }
+      ],
+      "multiple": true,
+      "uid": "cards",
+      "field_metadata": {
+        "instruction": "",
+        "description": ""
+      },
+      "mandatory": false,
+      "non_localizable": false,
+      "unique": false
+    }
+  ]
+}
